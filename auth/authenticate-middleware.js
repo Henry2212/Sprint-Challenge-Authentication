@@ -5,7 +5,7 @@
   before granting access to the next middleware/route handler
 */
 const jwt = require('jsonwebtoken');
-const { jwtSecret } = require('../config/secret');
+const { jwtSecret } = require('../config/secrets');
 
 module.exports = (req, res, next) => {
   const token = req.headers.authorization;
